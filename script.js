@@ -6,7 +6,7 @@ const filterSection = document.querySelector(".filter");
 
 let filteredActive = []
 
-
+// This Function Gets data from the Json File 
 async function getData() {
     try {
         const response = await fetch("./data.json");
@@ -19,10 +19,15 @@ async function getData() {
         }  catch (error)   {
             console.log(error);
         }
+
+        setTimeout(() => {
+            document.querySelector(".container").style.opacity = "1";
+        }, 100);
     }
     
     getData();
     
+    // This function Populate the data into job profile 
     function showData(data){
             container.innerHTML = data.map((each, index) => {
                     return `
@@ -60,7 +65,7 @@ async function getData() {
         AddSkill();
 } 
 
-
+// this function adds various skill to the filter when click and also filter out when button is clicked 
 function AddSkill() {
     const skillButton = document.querySelectorAll(".skills button");
 

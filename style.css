@@ -38,6 +38,10 @@ header img {
     gap: 1rem;
 }
 
+.filter-box {
+    display: flex;
+}
+
 .filter-box p {
     padding: .5rem;
     display: inline-block;
@@ -48,7 +52,8 @@ header img {
 }
 
 .filter-box button {
-    height: 2rem;
+    height: 2.3rem;
+    width: 2rem;
     aspect-ratio: 1;
     background: #5BA4A4;
     border: none;
@@ -80,6 +85,8 @@ header img {
     max-width: 65rem;
     justify-content: center;
     margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .job-card.featured {
