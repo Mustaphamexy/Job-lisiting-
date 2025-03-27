@@ -189,6 +189,7 @@ header img {
         flex-direction: column;
         gap: 1rem;
         align-items: normal;
+        margin-top: -2rem;
     }
     .firstline span {
         font-size: .6rem;
